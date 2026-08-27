@@ -96,6 +96,20 @@ Keep prompts as separate `.txt`/`.jinja` files, not hardcoded strings — makes 
 
 ---
 
+##Docker struct
+                    Docker Compose
+                         │
+             ┌───────────┴───────────┐
+             │                       │
+             ▼                       ▼
+        Backend                  Frontend
+       Python + ADK              Streamlit
+          :8000                    :8501
+             │                       │
+             └───────────┬───────────┘
+                         │
+                    Docker network
+
 ## 4. Step-by-step build plan
 
 ### Phase 0 — Setup (day 1)
